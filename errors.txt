@@ -1,0 +1,14 @@
+'''
+    Below are the reasons to which SyntaxError: (unicode error) ‘unicodeescape’ codec can’t 
+    decode bytes in position 2-3: truncated \UXXXXXXXX escape occurs in Python:
+
+    > Invalid Escape Sequences
+    In this code, a file path is assigned to the variable file_path, but the backslashes 
+    in the Windows file path should be escaped to avoid interpreting them as escape 
+    sequences. Using backslashes in strings without properly escaping them or forming 
+    valid Unicode escape sequences can trigger this error.
+
+    > Truncated Escape Sequences
+    In this code, the file path assigned to file_path contains a truncated escape sequence 
+    (\U) which might lead to unexpected behavior or errors.
+'''
